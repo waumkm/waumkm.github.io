@@ -316,9 +316,98 @@ data-full-width-responsive="true"></ins>
 
 
 <section class="latest-articles animate__animated animate__fadeInUp">
-<h3>Artikel Terbaru</h3>
-<div class="grid-container-articles">
-<div class="grid-article">
+
+<style>
+/* ===== SITEMAP DEWA STYLE ===== */
+#sitemap-dewa {
+  max-width: 1100px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+.sitemap-header {
+  text-align: center;
+  margin: 30px 0;
+}
+.sitemap-header h1 {
+  font-size: 30px;
+}
+.search-box {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.search-box input {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.label-title {
+  font-size: 22px;
+  margin: 40px 0 15px;
+  border-left: 6px solid #ff9800;
+  padding-left: 10px;
+}
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+.post-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: .3s;
+}
+.post-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+.post-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.post-card .content {
+  padding: 12px;
+}
+.post-card h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+.post-card a {
+  text-decoration: none;
+  color: #222;
+}
+.post-date {
+  font-size: 12px;
+  color: #777;
+}
+.news-badge {
+  background: red;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+</style>
+
+<div id="sitemap-dewa">
+  <div class="sitemap-header">
+    <h3>Artikel Terbaru</h3>
+   
+    <p>Artikel terbaru, kategori lengkap & SEO friendly</p>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Cari artikel...">
+  </div>
+
+  <div id="sitemap-content">Loading sitemap...</div>
+</div>
+  
+</div>
 <script>
 var blogUrl = "https://waumkm.blogspot.com";
 var maxResults = 500;
